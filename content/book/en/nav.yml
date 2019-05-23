@@ -1,0 +1,12 @@
+- title: Introduction
+  items:
+    - id: welcome
+      title: Welcome
+    - id: what-is-nervos
+      title: What is Nervos?
+- title: Basic Concepts
+  items:
+    - id: introduction
+      title: Introduction
+    - id: ckb-architecture
+      title: CKB Architecture
