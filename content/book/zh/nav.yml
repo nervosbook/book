@@ -1,0 +1,12 @@
+- title: 简介
+  items:
+    - id: welcome
+      title: 欢迎
+    - id: what-is-nervos
+      title: 什么是 Nervos？
+- title: 基础概念
+  items:
+    - id: introduction
+      title: 简介
+    - id: ckb-architecture
+      title: CKB 架构

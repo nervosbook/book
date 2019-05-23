@@ -66,6 +66,7 @@ const Course = ({ pageContext, data, location }) => {
     edge => edge.node.id === pageContext.slug
   )[0]
   const course = edge.node
+
   return (
     <Layout location={location}>
       <div css={s.root}>
@@ -102,7 +103,7 @@ const Course = ({ pageContext, data, location }) => {
                   <ul>
                     {el.items.map(item => (
                       <li key={item.id}>
-                        <Link to={slugify(item.id, 'book/en')}>
+                        <Link to={slugify(item.id, `book/${pageContext.slug}`)}>
                           {item.title}
                         </Link>
                       </li>
