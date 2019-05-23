@@ -32,24 +32,18 @@ const s = {
     width: 80,
     fontSize: 12
   },
-  headline: {
+  title: {
     color: '#fff',
     fontWeight: 600,
     marginBottom: 16,
     fontSize: '1.5rem',
     lineHeight: '1.35417em'
   },
-  subtitle: {
+  desc: {
     color: '#fff',
     marginBottom: 16,
     fontSize: '0.875rem',
     lineHeight: '1.71429em'
-  },
-  icon: {
-    color: 'rgba(33, 33, 33, 0.8)',
-    '&:hover': {
-      color: '#a7cbd0'
-    }
   },
   hero: {
     position: 'absolute',
@@ -80,8 +74,8 @@ const Course = ({ pageContext, data, location }) => {
                 marginRight: 'auto'
               }}
             >
-              <div css={s.headline}>{course.title}</div>
-              <div css={s.subtitle}>{course.desc}</div>
+              <div css={s.title}>{course.title}</div>
+              <div css={s.desc}>{course.desc}</div>
               <div css={s.date}>{course.date}</div>
             </div>
           </Container>

@@ -1,10 +1,10 @@
-- title: 简介
+- title: 第一章简介
   items:
     - id: welcome
       title: 欢迎
     - id: what-is-nervos
       title: 什么是 Nervos？
-- title: 基础概念
+- title: 第二章基础概念
   items:
     - id: introduction
       title: 简介

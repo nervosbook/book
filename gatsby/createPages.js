@@ -68,7 +68,6 @@ module.exports = async ({ graphql, actions }) => {
 
   allMarkdown.data.allMarkdownRemark.edges.forEach(edge => {
     const slug = edge.node.fields.slug
-    console.log('slug', slug)
     const createArticlePage = path =>
       createPage({
         path: path,
