@@ -47,7 +47,7 @@
   ],
   "license": "CC",
   "scripts": {
-    "build": "rimraf ./public && gatsby build",
+    "build": "yarn reset && rimraf ./public && gatsby build",
     "dev": "yarn reset && gatsby develop -H 0.0.0.0",
     "lint": "eslint .",
     "reset": "rimraf ./.cache"
