@@ -1,4 +1,4 @@
-import hex2rgba from 'hex2rgba';
+import hex2rgba from 'hex2rgba'
 
 const colors = {
   dark: '#282c34',
@@ -9,8 +9,9 @@ const colors = {
   black: '#000000',
   header: '#ececec',
   primary: '#45c289',
-  text: '#212121'
-};
+  text: '#212121',
+  secondary: '#11355c'
+}
 
 const SIZES = {
   xsmall: { min: 0, max: 599 },
@@ -26,45 +27,45 @@ const SIZES = {
 
   // Topbar related tweakpoints
   expandedSearch: { min: 1180, max: Infinity }
-};
+}
 
 const media = {
   between(smallKey, largeKey, excludeLarge) {
     if (excludeLarge) {
       return `@media (min-width: ${
         SIZES[smallKey].min
-      }px) and (max-width: ${SIZES[largeKey].min - 1}px)`;
+      }px) and (max-width: ${SIZES[largeKey].min - 1}px)`
     } else {
       if (SIZES[largeKey].max === Infinity) {
-        return `@media (min-width: ${SIZES[smallKey].min}px)`;
+        return `@media (min-width: ${SIZES[smallKey].min}px)`
       } else {
         return `@media (min-width: ${SIZES[smallKey].min}px) and (max-width: ${
           SIZES[largeKey].max
-        }px)`;
+        }px)`
       }
     }
   },
 
   greaterThan(key) {
-    return `@media (min-width: ${SIZES[key].min}px)`;
+    return `@media (min-width: ${SIZES[key].min}px)`
   },
 
   lessThan(key) {
-    return `@media (max-width: ${SIZES[key].min - 1}px)`;
+    return `@media (max-width: ${SIZES[key].min - 1}px)`
   },
 
   size(key) {
-    const size = SIZES[key];
+    const size = SIZES[key]
 
     if (size.min == null) {
-      return media.lessThan(key);
+      return media.lessThan(key)
     } else if (size.max == null) {
-      return media.greaterThan(key);
+      return media.greaterThan(key)
     } else {
-      return media.between(key, key);
+      return media.between(key, key)
     }
   }
-};
+}
 
 const fonts = {
   header: {
@@ -85,7 +86,7 @@ const fonts = {
   small: {
     fontSize: 14
   }
-};
+}
 
 // Shared styles are generally better as components,
 // Except when they must be used within nested CSS selectors.
@@ -94,7 +95,7 @@ const linkStyle = {
   borderBottom: `1px solid ${hex2rgba(colors.primary, 0.2)}`,
   color: colors.primary,
   wordBreak: 'break-word'
-};
+}
 const sharedStyles = {
   link: linkStyle,
 
@@ -323,6 +324,6 @@ const sharedStyles = {
       marginTop: 40
     }
   }
-};
+}
 
-export { colors, fonts, media, sharedStyles };
+export { colors, fonts, media, sharedStyles }

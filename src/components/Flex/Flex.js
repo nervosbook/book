@@ -1,4 +1,4 @@
-import { createElement } from 'glamor/react';
+import { createElement } from 'glamor/react'
 
 /**
  * Convenience component for declaring a flexbox layout.
@@ -24,11 +24,11 @@ const Flex = ({
         flexShrink: shrink,
         flexBasis: basis,
         justifyContent: direction === 'row' ? halign : valign,
-        alignItems: direction === 'row' ? valign : halign,
+        alignItems: direction === 'row' ? valign : halign
       },
-      ...rest,
+      ...rest
     },
-    children,
-  );
+    children
+  )
 
-export default Flex;
+export default Flex

@@ -1,14 +1,14 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import { colors, media } from 'theme';
-import Container from 'components/Container';
-import LogoIcon from 'svg/Logo';
-import DocSearch from './DocSearch';
+import React from 'react'
+import { Link } from 'gatsby'
+import { colors, media } from 'theme'
+import Container from 'components/Container'
+import LogoIcon from 'svg/Logo'
+import DocSearch from './DocSearch'
 
 const Header = () => (
   <header
     css={{
-      backgroundColor: colors.header,
+      backgroundColor: colors.secondary,
       color: colors.text,
       position: 'fixed',
       zIndex: 100,
@@ -54,12 +54,12 @@ const Header = () => (
         >
           <LogoIcon
             css={{
-              width: 90,
+              width: 60,
               [media.between('small', 'large')]: {
-                width: 70
+                width: 50
               },
               [media.lessThan('small')]: {
-                width: 60
+                width: 36
               }
             }}
           />
@@ -69,6 +69,6 @@ const Header = () => (
       </div>
     </Container>
   </header>
-);
+)
 
-export default Header;
+export default Header

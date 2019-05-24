@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
-import Flex from 'components/Flex';
-import Footer from 'components/LayoutFooter';
-import Header from 'components/LayoutHeader';
-import { media } from 'theme';
+import React, { Component } from 'react'
+import Flex from 'components/Flex'
+import Footer from 'components/LayoutFooter'
+import Header from 'components/LayoutHeader'
+import { media } from 'theme'
 
 class Template extends Component {
   render() {
-    const { children, location, hideFooter } = this.props;
-    let layoutHasSidebar = false;
+    const { children, location, hideFooter } = this.props
+    let layoutHasSidebar = false
     if (location.pathname.match(/\.html$/)) {
-      layoutHasSidebar = true;
+      layoutHasSidebar = true
     }
 
     return (
@@ -41,8 +41,8 @@ class Template extends Component {
         </Flex>
         {hideFooter ? null : <Footer layoutHasSidebar={layoutHasSidebar} />}
       </div>
-    );
+    )
   }
 }
 
-export default Template;
+export default Template
