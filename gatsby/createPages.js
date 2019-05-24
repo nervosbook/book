@@ -3,6 +3,9 @@ const { resolve } = require('path')
 module.exports = async ({ graphql, actions }) => {
   const { createPage, createRedirect } = actions
 
+  // Used to detect and prevent duplicate redirects
+  const redirectToSlugMap = {}
+
   const docsTemplate = resolve(__dirname, '../src/templates/docs.js')
   const courseTemplate = resolve(__dirname, '../src/templates/course.js')
 
@@ -11,12 +14,6 @@ module.exports = async ({ graphql, actions }) => {
     fromPath: '/index.html',
     redirectInBrowser: true,
     toPath: '/'
-  })
-
-  createRedirect({
-    fromPath: '/book',
-    redirectInBrowser: true,
-    toPath: '/book/en'
   })
 
   const allCourse = await graphql(`
