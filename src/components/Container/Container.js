@@ -1,5 +1,5 @@
-import React from 'react';
-import { media } from 'theme';
+import React from 'react'
+import { media } from 'theme'
 
 /**
  * This component wraps page content sections (eg header, footer, main).
@@ -8,6 +8,7 @@ import { media } from 'theme';
 const Container = ({ children, style }) => (
   <div
     css={{
+      width: '100%',
       paddingLeft: 20,
       paddingRight: 20,
       marginLeft: 'auto',
@@ -24,6 +25,6 @@ const Container = ({ children, style }) => (
   >
     {children}
   </div>
-);
+)
 
-export default Container;
+export default Container

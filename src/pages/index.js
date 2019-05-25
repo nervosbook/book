@@ -5,6 +5,7 @@ import Layout from 'components/Layout'
 import createOgUrl from 'utils/createOgUrl'
 import CourseList from 'components/CourseList'
 import { colors, media } from 'theme'
+import { Link } from 'gatsby'
 
 const s = {
   button: {
@@ -16,7 +17,8 @@ const s = {
     lineHeight: '50px',
     fontSize: 20,
     cursor: 'pointer',
-    fontWeight: 600
+    fontWeight: 600,
+    margin: 16
   }
 }
 class Home extends Component {
@@ -64,13 +66,26 @@ class Home extends Component {
             <div
               css={{
                 display: 'flex',
-                justifyContent: 'space-between',
-                width: '50%',
-                margin: '72px auto'
+                width: '100%',
+                alignItems: 'center',
+                flexDirection: 'column',
+                [media.greaterThan('small')]: {
+                  width: '70%',
+                  justifyContent: 'space-between',
+                  flexDirection: 'row',
+                  margin: '64px auto 0'
+                },
+                [media.greaterThan('medium')]: {
+                  width: '50%'
+                }
               }}
             >
-              <div css={s.button}>中文版</div>
-              <div css={s.button}>英文版</div>
+              <Link to="book/zh" css={s.button}>
+                中文版
+              </Link>
+              <Link to="book/en" css={s.button}>
+                英文版
+              </Link>
             </div>
           </Container>
         </div>
