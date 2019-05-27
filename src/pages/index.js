@@ -33,7 +33,7 @@ class Home extends Component {
         <div
           css={{
             width: '100%',
-            backgroundColor: '#11355c',
+            backgroundColor: colors.secondary,
             height: `calc(100vh - 60px)`,
             [media.between('small', 'large')]: {
               height: `calc(100vh - 50px)`
@@ -50,15 +50,22 @@ class Home extends Component {
             <img
               alt="logo"
               src="/nervos_logo.svg"
-              css={{ width: 200, margin: '0 auto', display: 'block' }}
+              css={{
+                width: 200,
+                margin: '0 auto',
+                display: 'block',
+                [media.lessThan('small')]: {
+                  width: 108
+                }
+              }}
             />
             <div
               css={{
                 textAlign: 'center',
-                margin: '2.638vw auto 35px',
+                margin: '3vw auto 35px',
                 fontSize: '1.5rem',
                 color: colors.white,
-                fontFamliy: 'Helvetica, sans-serif'
+                fontFamily: 'Helvetica, sans-serif'
               }}
             >
               A little book about Nervos' story

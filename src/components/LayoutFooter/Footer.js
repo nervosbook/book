@@ -7,80 +7,67 @@ import LogoIcon from 'svg/Logo'
 const Footer = ({ layoutHasSidebar = false }) => (
   <footer
     css={{
-      backgroundColor: colors.white,
+      backgroundColor: colors.secondary,
       color: colors.black,
-      paddingTop: 10,
-      paddingBottom: 50,
-
-      [media.size('sidebarFixed')]: {
-        paddingTop: 40
-      }
+      paddingTop: 30,
+      paddingBottom: 50
     }}
   >
     <Container>
-      <div
+      <section
         css={{
           display: 'flex',
           flexDirection: 'row',
           justifyContent: 'space-between',
-          borderTop: `1px solid ${colors.primary}`,
-
-          [media.between('small', 'medium')]: {
-            paddingRight: layoutHasSidebar ? 240 : null
-          },
-
-          [media.between('large', 'largerSidebar')]: {
-            paddingRight: layoutHasSidebar ? 280 : null
-          },
-          [media.between('largerSidebar', 'sidebarFixed', true)]: {
-            paddingRight: layoutHasSidebar ? 380 : null
-          }
+          alignItems: 'center'
         }}
       >
-        <section
-          css={{
-            paddingTop: 40,
-            display: 'block !important',
-            maxWidth: 300
-          }}
-        >
-          <LogoIcon width={110} />
-          <p
+        <Link to="/">
+          <LogoIcon
             css={{
-              color: colors.text,
-              paddingTop: 15,
-              opacity: 0.7,
-              fontSize: 12
+              width: 60,
+              [media.lessThan('small')]: {
+                width: 36
+              }
             }}
-          >
-            除非另行特定说明，本站所有文字内容，以及相关视频按照{' '}
-            <a
-              href="https://creativecommons.org/licenses/by-sa/4.0/"
-              css={{
-                color: colors.primary
-              }}
-            >
-              CC-SA 协议
-            </a>
-            发布。
-          </p>
-        </section>
-        <div css={{ flexShrink: 0, paddingTop: 40 }}>
+          />
+        </Link>
+
+        <div css={{ flexShrink: 0 }}>
           <Link
             to="/about"
             css={{
               display: 'block',
               textDecoration: 'none',
               color: colors.primary,
-              fontWeight: 500,
-              height: '46.86px',
-              lineHeight: '46.86px'
+              fontWeight: 500
             }}
           >
             关于
           </Link>
         </div>
-      </div>
+      </section>
+
+      <p
+        css={{
+          color: colors.white,
+          paddingTop: 15,
+          opacity: 0.7,
+          fontSize: 12,
+          lineHeight: 1.8
+        }}
+      >
+        除非另行特定说明，本站所有文字内容，以及相关视频按照{' '}
+        <a
+          href="https://creativecommons.org/licenses/by-sa/4.0/"
+          css={{
+            color: colors.primary
+          }}
+        >
+          CC-SA 协议
+        </a>
+        发布。
+      </p>
     </Container>
   </footer>
 )

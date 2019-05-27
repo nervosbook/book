@@ -36,28 +36,10 @@ const Header = () => (
           }
         }}
       >
-        <Link
-          css={{
-            display: 'flex',
-            marginRight: 10,
-            height: '100%',
-            alignItems: 'center',
-
-            [media.greaterThan('small')]: {
-              width: 'calc(100% / 6)'
-            },
-            [media.lessThan('small')]: {
-              flex: '0 0 auto'
-            }
-          }}
-          to="/"
-        >
+        <Link to="/">
           <LogoIcon
             css={{
               width: 60,
-              [media.between('small', 'large')]: {
-                width: 50
-              },
               [media.lessThan('small')]: {
                 width: 36
               }
