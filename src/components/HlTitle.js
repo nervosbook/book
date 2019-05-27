@@ -1,4 +1,4 @@
-import { createElement } from 'glamor/react';
+import { createElement } from 'glamor/react'
 import { colors } from 'theme'
 
 const HlTitle = ({
@@ -10,16 +10,18 @@ const HlTitle = ({
   center = true,
   fontSize = 20,
   marginBottom = 32,
+  marginTop,
   ...rest
 }) =>
   createElement(
     type,
     {
       css: {
-        fontSize: fontSize,
-        color: color,
-        opacity: .7,
-        marginBottom: marginBottom,
+        fontSize,
+        color,
+        opacity: 0.7,
+        marginTop,
+        marginBottom,
         fontWeight: 500,
         textAlign: 'center',
         position: 'relative',
@@ -33,9 +35,9 @@ const HlTitle = ({
           marginLeft: center ? `-${lineWidth / 2}px` : 0
         }
       },
-      ...rest,
+      ...rest
     },
-    children,
-  );
+    children
+  )
 
-export default HlTitle;
+export default HlTitle

@@ -3,9 +3,9 @@ import Container from 'components/Container'
 import TitleAndMetaTags from 'components/TitleAndMetaTags'
 import Layout from 'components/Layout'
 import createOgUrl from 'utils/createOgUrl'
-import CourseList from 'components/CourseList'
 import { colors, media } from 'theme'
 import { Link } from 'gatsby'
+import HlTitle from 'components/HlTitle'
 
 const s = {
   button: {
@@ -97,9 +97,10 @@ class Home extends Component {
           </Container>
         </div>
         <div css={{ width: '100%' }}>
-          <section css={{ paddingBottom: 32 }}>
+          <section css={{ paddingBottom: 64, paddingTop: 64 }}>
             <Container>
-              <CourseList title="目录" />
+              <HlTitle>目录</HlTitle>
+              <div css={{ height: 200 }} />
             </Container>
           </section>
         </div>
