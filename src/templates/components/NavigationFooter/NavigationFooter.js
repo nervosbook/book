@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import { colors } from 'theme';
-import ArrowBackIcon from 'svg/ArrowBack';
-import ArrowForwardIcon from 'svg/ArrowForward';
+import React from 'react'
+import { Link } from 'gatsby'
+import { colors } from 'theme'
+import ArrowBackIcon from 'svg/ArrowBack'
+import ArrowForwardIcon from 'svg/ArrowForward'
 
 const NavigationFooter = ({ next, prev, location }) => {
   return (
@@ -12,7 +12,9 @@ const NavigationFooter = ({ next, prev, location }) => {
         paddingTop: 50,
         paddingBottom: 50,
         display: 'flex',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        marginLeft: '-8px',
+        marginRight: '-8px'
       }}
     >
       {prev && (
@@ -35,16 +37,16 @@ const NavigationFooter = ({ next, prev, location }) => {
         </PrimaryLink>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default NavigationFooter;
+export default NavigationFooter
 
 const PrimaryLink = ({ children, to, location }) => {
   // quick fix
   // TODO: replace this with better method of getting correct full url
   const updatedUrl =
-    (location && location.pathname.replace(/\/[^/]+\.html/, '/' + to)) || to;
+    (location && location.pathname.replace(/\/[^/]+\.html/, '/' + to)) || to
   return (
     <Link
       css={{
@@ -52,10 +54,11 @@ const PrimaryLink = ({ children, to, location }) => {
         justifyContent: 'space-between',
         alignItems: 'center',
         textDecoration: 'none',
-        width: 'calc(50% - 16px)',
+        width: '100%',
+        margin: 8,
         border: '1px solid #E6ECF1',
         boxShadow: `0 3px 8px 0 rgba(116, 129, 141, 0.1)`,
-        padding: 16,
+        padding: '16px 8px',
         ':hover': {
           borderColor: colors.primary
         }
@@ -64,8 +67,8 @@ const PrimaryLink = ({ children, to, location }) => {
     >
       {children}
     </Link>
-  );
-};
+  )
+}
 
 const SecondaryLabel = ({ children }) => (
   <div
@@ -78,7 +81,7 @@ const SecondaryLabel = ({ children }) => (
   >
     {children}
   </div>
-);
+)
 
 const PrimaryLabel = ({ children }) => (
   <div
@@ -92,4 +95,4 @@ const PrimaryLabel = ({ children }) => (
   >
     {children}
   </div>
-);
+)
