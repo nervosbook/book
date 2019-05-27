@@ -92,12 +92,21 @@ const Course = ({ pageContext, data, location }) => {
           >
             {course.toc.map(el => {
               return (
-                <div key={el.title}>
-                  {el.title}
+                <div key={el.title} css={{ marginBottom: 32 }}>
+                  <div css={{ fontSize: 18, fontWeight: 500, marginBottom: 8 }}>
+                    {el.title}
+                  </div>
                   <ul>
                     {el.items.map(item => (
-                      <li key={item.id}>
-                        <Link to={slugify(item.id, `book/${pageContext.slug}`)}>
+                      <li key={item.id} css={{ margin: 16 }}>
+                        <Link
+                          to={slugify(item.id, `book/${pageContext.slug}`)}
+                          css={{
+                            fontSize: 16,
+                            fontWeight: 500,
+                            color: colors.primary
+                          }}
+                        >
                           {item.title}
                         </Link>
                       </li>
