@@ -87,7 +87,7 @@ const Course = ({ pageContext, data, location }) => {
             css={{
               width: '100%',
               maxWidth: 620,
-              margin: '0 auto 64px'
+              margin: '32px auto 64px'
             }}
           >
             {course.toc.map(el => {
