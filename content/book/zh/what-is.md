@@ -1,9 +1,8 @@
 ---
-id: what-is-nervos
+id: what-is
 title: 什么是 Nervos？
 permalink: book/zh/what-is.html
-prev: welcome.html
-next: introduction.html
+next: punk.html
 ---
 
 什么是 Nervos？

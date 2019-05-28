@@ -1,12 +1,12 @@
-- title: 第一章简介
+- title: 简介
   items:
-    - id: welcome
-      title: 欢迎
-    - id: what-is-nervos
-      title: 什么是 Nervos？
-- title: 第二章基础概念
+    - id: what-is
+      title: 什么是 Nervos ?
+    - id: punk
+      title: 从密码朋克到区块链上的钱
+- title: Nervos CKB 是如何工作的？
   items:
-    - id: introduction
-      title: 简介
-    - id: ckb-architecture
-      title: CKB 架构
+    - id: ckb-overview
+      title: 基本原理
+    - id: make-tx
+      title: 交易
