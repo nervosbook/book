@@ -1,27 +1,28 @@
-import React, { Component } from 'react';
-import { colors, media } from 'theme';
-import hex2rgba from 'hex2rgba';
+import React, { Component } from 'react'
+import { colors, media } from 'theme'
+import hex2rgba from 'hex2rgba'
+import { apiKey } from 'site-constants'
 
 class DocSearch extends Component {
   state = {
     enabled: true
-  };
+  }
 
   componentDidMount() {
     if (window.docsearch) {
       window.docsearch({
-        apiKey: '91fce6c04d7f68bbb346278719149541',
-        indexName: 'nervos',
+        apiKey: apiKey,
+        indexName: 'nervosbook',
         inputSelector: '#docsearch-input'
-      });
+      })
     } else {
-      console.warn('Search has failed to load and now is being disabled');
-      this.setState({ enabled: false });
+      console.warn('Search has failed to load and now is being disabled')
+      this.setState({ enabled: false })
     }
   }
 
   render() {
-    const { enabled } = this.state;
+    const { enabled } = this.state
 
     return enabled ? (
       <form
@@ -88,8 +89,8 @@ class DocSearch extends Component {
           aria-label="Search docs"
         />
       </form>
-    ) : null;
+    ) : null
   }
 }
 
-export default DocSearch;
+export default DocSearch

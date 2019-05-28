@@ -5,4 +5,7 @@ const gitHubRepo = 'https://github.com/nervosbook/book/tree/master'
 // the SSR part in node.js we won't have a proper location.
 const urlRoot = 'https://nervosbook.github.io'
 
-export { urlRoot, gitHubRepo }
+// algolia search
+const apiKey = 'xxx'
+
+export { urlRoot, gitHubRepo, apiKey }

@@ -90,7 +90,7 @@ const MarkdownPage = ({
                 返回
               </span>
             </Link>
-            <div className="docSearch-content">
+            <div id="docSearch-content">
               <MarkdownHeader title={titlePrefix} />
 
               <div css={sharedStyles.articleLayout.content}>
