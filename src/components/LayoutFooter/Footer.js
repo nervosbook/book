@@ -32,20 +32,6 @@ const Footer = ({ layoutHasSidebar = false }) => (
             }}
           />
         </Link>
-
-        <div css={{ flexShrink: 0 }}>
-          <Link
-            to="/about"
-            css={{
-              display: 'block',
-              textDecoration: 'none',
-              color: colors.primary,
-              fontWeight: 500
-            }}
-          >
-            关于
-          </Link>
-        </div>
       </section>
 
       <p

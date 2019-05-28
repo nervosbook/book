@@ -76,7 +76,6 @@ const Course = ({ pageContext, data, location }) => {
             >
               <div css={s.title}>{course.title}</div>
               <div css={s.desc}>{course.desc}</div>
-              <div css={s.date}>{course.date}</div>
             </div>
           </Container>
           <HeroDiv css={s.hero} />

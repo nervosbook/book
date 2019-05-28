@@ -5,7 +5,9 @@ import Layout from 'components/Layout'
 import createOgUrl from 'utils/createOgUrl'
 import { colors, media } from 'theme'
 import { Link } from 'gatsby'
-import HlTitle from 'components/HlTitle'
+import Author from './components/Author'
+import BookIntro from './components/BookIntro'
+import Contributors from './components/Contributors'
 
 const s = {
   button: {
@@ -99,9 +101,15 @@ class Home extends Component {
         <div css={{ width: '100%' }}>
           <section css={{ paddingBottom: 64, paddingTop: 64 }}>
             <Container>
-              <HlTitle>简介</HlTitle>
+              <BookIntro />
             </Container>
           </section>
+        </div>
+        <div css={{ width: '100%' }}>
+          <Author />
+        </div>
+        <div css={{ width: '100%' }}>
+          <Contributors />
         </div>
       </Layout>
     )
