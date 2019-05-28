@@ -99,8 +99,7 @@ class Home extends Component {
         <div css={{ width: '100%' }}>
           <section css={{ paddingBottom: 64, paddingTop: 64 }}>
             <Container>
-              <HlTitle>目录</HlTitle>
-              <div css={{ height: 200 }} />
+              <HlTitle>简介</HlTitle>
             </Container>
           </section>
         </div>
