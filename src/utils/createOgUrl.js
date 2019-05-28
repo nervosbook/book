@@ -1,5 +1,5 @@
-import { urlRoot } from 'site-constants';
+import { urlRoot } from 'site-constants'
 
-export default (slug) => {
-  return slug == null ? null : `${urlRoot}/${slug.replace(/^\//, '')}`;
+export default slug => {
+  return slug == null ? null : `${urlRoot}/${slug.replace(/^\//, '')}`
 }
