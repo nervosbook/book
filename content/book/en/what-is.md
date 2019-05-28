@@ -1,7 +1,7 @@
 ---
-id: what-is-nervos
+id: what-is
 title: What is Nervos?
-permalink: book/en/what-is-nervos.html
+permalink: book/en/what-is.html
 prev: welcome.html
 next: introduction.html
 ---
