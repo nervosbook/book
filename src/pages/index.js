@@ -70,7 +70,7 @@ class Home extends Component {
                 fontFamily: 'Helvetica, sans-serif'
               }}
             >
-              A little book about Nervos' story
+              A little book about the Nervos' story
             </div>
             <div
               css={{
@@ -93,7 +93,7 @@ class Home extends Component {
                 中文版
               </Link>
               <Link to="book/en" css={s.button}>
-                英文版
+                English
               </Link>
             </div>
           </Container>

@@ -31,7 +31,7 @@ const BookIntro = () => (
       >
         <img
           alt="git"
-          src="https://img.haoqicat.com/2019031834.jpg"
+          src="https://img.haoqicat.com/2019052802.jpg"
           css={{ width: '100%' }}
         />
       </div>
@@ -57,7 +57,7 @@ const BookIntro = () => (
             }
           }}
         >
-          Nervos
+          The Nervos Community Book
         </div>
         <div
           css={{
@@ -90,7 +90,7 @@ const BookIntro = () => (
             marginTop: '40px'
           }}
         >
-          《Nervos》是一本带初学者学会了解 Nervos 的书。
+          《The Nervos Community Book》是一本带初学者学会了解 Nervos 的书。
         </div>
       </div>
     </div>
