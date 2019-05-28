@@ -129,7 +129,6 @@ export const pageQuery = graphql`
           id
           title
           desc
-          date
           toc {
             title
             items {
