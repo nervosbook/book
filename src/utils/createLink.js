@@ -16,30 +16,31 @@ const createLinkDocs = ({ isActive, item, section }) => {
 }
 
 const activeLinkCss = {
-  fontWeight: 700
+  fontWeight: 500
 }
 
 const activeLinkBefore = {
   width: 4,
-  height: 25,
+  height: 24,
   borderLeft: `4px solid ${colors.primary}`,
-  paddingLeft: 16,
   position: 'absolute',
   left: 0,
-  marginTop: -3,
+  marginTop: -2,
 
   [media.greaterThan('largerSidebar')]: {
-    left: 15
+    left: 16
   }
 }
 
 const linkCss = {
+  fontFamily: 'sans-serif',
   color: colors.text,
   display: 'inline-block',
   borderBottom: '1px solid transparent',
   transition: 'border 0.2s ease',
   marginTop: 5,
-
+  fontSize: 14,
+  lineHeight: 1.5,
   '&:hover': {
     color: colors.subtle
   }

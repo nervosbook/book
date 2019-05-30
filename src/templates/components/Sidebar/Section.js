@@ -25,6 +25,8 @@ class Section extends React.Component {
           aria-expanded={isActive}
           aria-controls={uid}
           css={{
+            width: '100%',
+            textAlign: 'left',
             cursor: 'pointer',
             backgroundColor: 'transparent',
             border: 0,
@@ -38,6 +40,11 @@ class Section extends React.Component {
           <MetaTitle
             cssProps={{
               [media.greaterThan('small')]: {
+                fontFamily: 'sans-serif',
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                paddingRight: 24,
                 color: isActive ? colors.text : colors.subtle,
                 ':hover': {
                   color: colors.text
@@ -48,6 +55,7 @@ class Section extends React.Component {
             {section.title}
             <ChevronSvg
               cssProps={{
+                flexShrink: '0',
                 marginLeft: 7,
                 transform: isActive ? 'rotateX(180deg)' : 'rotateX(0deg)',
                 transition: 'transform 0.2s ease',
@@ -74,7 +82,8 @@ class Section extends React.Component {
             <li
               key={item.id}
               css={{
-                marginTop: 5
+                marginTop: 5,
+                padding: '0 24px 0 16px'
               }}
             >
               {createLink({

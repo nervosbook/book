@@ -86,10 +86,10 @@ class StickyResponsiveSidebar extends Component {
             }}
             css={{
               marginTop: 60,
-              [media.size('xsmall')]: { marginTop: 40 },
-              [media.between('small', 'medium')]: { marginTop: 50 },
-              [media.between('medium', 'large')]: { marginTop: 50 },
-              [media.greaterThan('small')]: { transform: 'none !important' }
+              [media.greaterThan('small')]: {
+                marginTop: 40,
+                transform: 'none !important'
+              }
             }}
           >
             <Sidebar closeParentMenu={this._closeNavMenu} {...this.props} />
