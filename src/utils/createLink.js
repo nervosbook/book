@@ -21,26 +21,27 @@ const activeLinkCss = {
 
 const activeLinkBefore = {
   width: 4,
-  height: 24,
   borderLeft: `4px solid ${colors.primary}`,
   position: 'absolute',
-  left: 0,
+  left: '-36px',
   marginTop: -2,
-
+  top: 7,
+  bottom: 7,
   [media.greaterThan('largerSidebar')]: {
-    left: 16
+    left: '-32px'
   }
 }
 
 const linkCss = {
+  position: 'relative',
   fontFamily: 'sans-serif',
   color: colors.text,
   display: 'inline-block',
   borderBottom: '1px solid transparent',
   transition: 'border 0.2s ease',
-  marginTop: 5,
   fontSize: 14,
   lineHeight: 1.5,
+  padding: '7px 0',
   '&:hover': {
     color: colors.subtle
   }

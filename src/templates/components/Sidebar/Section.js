@@ -30,7 +30,7 @@ class Section extends React.Component {
             cursor: 'pointer',
             backgroundColor: 'transparent',
             border: 0,
-            marginTop: 10,
+            marginTop: 8,
             ':focus': {
               outline: 'none'
             }
@@ -82,7 +82,6 @@ class Section extends React.Component {
             <li
               key={item.id}
               css={{
-                marginTop: 5,
                 padding: '0 24px 0 16px'
               }}
             >
