@@ -1,0 +1,28 @@
+version: 2.1
+jobs:
+  deploy:
+    docker:
+      - image: circleci/node:10.15.0
+    steps:
+      - checkout
+      - run:
+          name: Deploy to GitHub Pages
+          command: |
+            git config --global user.email "nervosbook-bot@users.noreply.github.com"
+            git config --global user.name "Website Deploy Script"
+            yarn install && yarn build
+            cd /home/circleci
+            git clone git@github.com:nervosbook/nervosbook.github.io.git nervosbook
+            rm -rf ./nervosbook/*
+            cp -rf ./project/public/* ./nervosbook
+            cd ./nervosbook && git add . && git commit -a -m 'a new build version' && git push
+
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only:
+                - master
