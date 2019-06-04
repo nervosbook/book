@@ -10,3 +10,7 @@
       title: Overview
     - id: make-tx
       title: Making Transactions
+- title: Economics
+  items:
+    - id: storage
+      title: Designed For Data Storage
