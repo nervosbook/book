@@ -5,7 +5,7 @@ const safeLoad = require('js-yaml').safeLoad
 const execSync = require('child_process').execSync
 const ejs = require('ejs')
 
-const bookDir = resolve(__dirname, `../../content/book`)
+const bookDir = resolve(__dirname, `../content/book`)
 const tempDir = resolve(__dirname, `./template`)
 
 function getBooks() {
