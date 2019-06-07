@@ -10,3 +10,7 @@
       title: 基本原理
     - id: make-tx
       title: 交易
+- title: 经济学
+  items:
+    - id: storage
+      title: 面向数据存储的设计
