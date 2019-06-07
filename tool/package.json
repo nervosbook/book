@@ -1,0 +1,14 @@
+{
+  "name": "makepdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/tool.js",
+  "scripts": {
+    "gen": "node src/tool.js"
+  },
+  "author": "billie66",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "js-yaml": "^3.13.1"
+  }
+}

@@ -1,0 +1,286 @@
+@page {
+  margin: 20mm 16mm 20mm 16mm;
+  size: A4;
+}
+
+@page :left {
+  @top-left {
+    font: 11pt serif;
+    content: 'The Nervos Community Book';
+    vertical-align: bottom;
+    padding-bottom: 2em;
+  }
+
+  @bottom-left {
+    font: 11pt serif;
+    content: counter(page);
+    padding-top: 2em;
+    vertical-align: top;
+  }
+}
+
+@page :right {
+  @top-right {
+    font: 11pt serif;
+    content: string(header, first);
+    vertical-align: bottom;
+    padding-bottom: 2em;
+  }
+
+  @bottom-right {
+    font: 11pt serif;
+    content: counter(page);
+    text-align: right;
+    vertical-align: top;
+    padding-top: 2em;
+  }
+}
+
+@page frontmatter :left {
+  @bottom-left {
+    font: 11pt serif;
+    content: counter(page);
+    padding-top: 2em;
+    vertical-align: top;
+  }
+}
+
+@page cover {
+  margin: 0;
+}
+
+@page frontmatter :right {
+  @top-right {
+    font: 11pt serif;
+    content: string(header, first);
+    vertical-align: bottom;
+    padding-bottom: 2em;
+  }
+
+  @bottom-right {
+    font: 11pt serif;
+    content: counter(page);
+    text-align: right;
+    vertical-align: top;
+    padding-top: 2em;
+  }
+}
+
+@page blank :left {
+  @top-left {
+    content: normal;
+  }
+  @bottom-left {
+    content: normal;
+  }
+}
+
+@page blank :right {
+  @top-right {
+    content: normal;
+  }
+  @bottom-right {
+    content: normal;
+  }
+}
+
+html {
+  margin: 0;
+  font: 11pt/1.26 sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  /* Set a counter named chapter, and its initial value is 0 */
+  counter-reset: chapter;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: sans-serif;
+  margin: 2em 0 0.5em 0;
+  page-break-after: avoid;
+}
+
+h1 {
+  padding: 2em 0 2em 0;
+  margin: 0;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+p {
+  margin: 1em 0;
+  line-height: 2.1;
+  font-weight: 200;
+  color: #555;
+}
+
+p.author {
+  margin-top: 2em;
+  text-indent: 0;
+  text-align: right;
+}
+
+pre {
+  margin: 10px 0;
+  word-break: break-all;
+  font-size: 0.9em;
+  line-height: 2;
+  color: #333;
+  border: solid 1px #efeee6;
+  border-radius: 3px;
+  background-color: #eee;
+  padding: 10px 15px 13px;
+}
+
+pre code a {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+blockquote {
+  background-color: #eee;
+  padding: 10px;
+  padding-left: 25px;
+  font-size: 16px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+section.titlepage,
+section.imprint {
+  page: blank;
+}
+
+section.toc,
+section.preface {
+  page: frontmatter;
+}
+
+section.frontcover,
+section.titlepage,
+section.imprint,
+section.toc,
+section.preface,
+section.chapter,
+section.section {
+  page-break-before: always;
+}
+
+section.frontcover img {
+  display: block;
+  margin: 1em 0;
+  width: 100%;
+}
+
+section.titlepage h1 {
+  color: #666;
+  position: absolute;
+  right: 0;
+  bottom: 3em;
+}
+
+section.titlepage h3 {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  position: absolute;
+  right: 0;
+  bottom: 3em;
+  color: #666;
+}
+
+section.titlepage p {
+  font-size: 1em;
+  position: absolute;
+  right: 0;
+  bottom: 1em;
+}
+
+ul.toc,
+ul.toc ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.toc h1 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+ul.toc ul {
+  margin-left: 1em;
+  font-weight: normal;
+}
+
+ul.toc > li {
+  font-weight: normal;
+  margin-bottom: 0.5em;
+  line-height: 24px;
+}
+
+ul.toc > li a {
+  color: #555;
+  font-weight: normal;
+}
+
+ul.toc a::after {
+  letter-spacing: 2px;
+  color: #666;
+  content: leader('.') target-counter(attr(href), page);
+  font-style: normal;
+}
+
+.chapter {
+  /* Increment the value of chapter counter by 1 */
+  counter-increment: chapter;
+}
+
+.chapter > h1::before {
+  /* Display the word 'Chapter', and the value of chapter counter, 
+  and a colon before the content of each h1 */
+  content: 'Chapter ' counter(chapter) ' ';
+  font-size: 1.2em;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.frontcover h1::before,
+.titlepage h1::before {
+  content: normal;
+}
+
+h1 {
+  string-set: header content();
+}
+
+.chapter h1 {
+  string-set: header 'Chapter ' counter(chapter) ': ' content();
+}

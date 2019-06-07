@@ -12,5 +12,5 @@
       title: 交易
 - title: 经济学
   items:
-    - id: storage
+    - id: storage-focused
       title: 面向数据存储的设计
