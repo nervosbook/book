@@ -1,5 +1,7 @@
 - title: Introduction
   items:
+    - id: public-chain
+      title: What Is A Public Blockchain?
     - id: what-is
       title: What Is Nervos?
     - id: punk
