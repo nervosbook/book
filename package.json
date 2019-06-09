@@ -54,7 +54,8 @@
     "lint": "eslint .",
     "reset": "rimraf ./.cache",
     "genpdf": "node tools/gen-pdf.js",
-    "genepub": "cd tools && node gen-epub.js"
+    "genepub": "cd tools && node gen-epub.js",
+    "genmobi": "yarn genepub && node tools/gen-mobi.js"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.1",
