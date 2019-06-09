@@ -1,0 +1,7 @@
+---
+title: The Nervos Community Book
+author: Happypeter
+rights: CC BY-SA 4.0
+cover-image: template/cover.png
+stylesheet: template/epub.css
+...

@@ -1,0 +1,103 @@
+body {
+  color: #444;
+  margin: auto;
+  font-family: Athelas, Georgia, serif;
+}
+
+h1 {
+  padding: 1em;
+  border-bottom: 1px solid #444;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 1.25em;
+}
+
+h1,
+h2 {
+  -epub-hyphens: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none;
+}
+
+p,
+blockquote {
+  orphans: 2;
+  widows: 2;
+}
+
+blockquote {
+  background-color: #eee;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0.8em;
+  padding-left: 1.6em;
+}
+
+p,
+figcaption {
+  -epub-hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+h1,
+h2,
+h3,
+table,
+img,
+figure,
+video,
+[data-page-break~='inside'][data-page-break~='avoid'] {
+  page-break-inside: avoid;
+}
+
+[data-page-break~='after'] {
+  page-break-after: always;
+}
+
+h1,
+h2,
+h3,
+[data-page-break~='after'][data-page-break~='avoid'] {
+  page-break-after: avoid;
+}
+
+[data-page-break~='before'] {
+  page-break-before: always;
+}
+
+[data-page-break~='before'][data-page-break~='avoid'] {
+  page-break-before: avoid;
+}
+
+img[data-page-break~='before'] {
+  page-break-before: left;
+}
+
+p {
+  font-size: 1em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  text-align: left;
+  text-indent: 0;
+  line-height: 1.8;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+pre {
+  background-color: #eee;
+  font-size: smaller;
+  padding: 1em;
+}
+
+code {
+  font-family: monospace;
+}

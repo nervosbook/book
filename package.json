@@ -53,7 +53,8 @@
     "dev": "yarn reset && gatsby develop -H 0.0.0.0",
     "lint": "eslint .",
     "reset": "rimraf ./.cache",
-    "genpdf": "node tools/gen-pdf.js"
+    "genpdf": "node tools/gen-pdf.js",
+    "genepub": "cd tools && node gen-epub.js"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.1",

@@ -1,4 +1,5 @@
 # book
+
 book source
 
 ## For PDF Generation
@@ -12,4 +13,12 @@ then run
 
 ```
 yarn genpdf
+```
+
+## For EPUB Generation
+
+You will first need to install Pandoc, then run:
+
+```
+yarn genepub
 ```
