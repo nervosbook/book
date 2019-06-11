@@ -1,7 +1,7 @@
 ---
-id: storage
+id: storage-focused
 title: Designed For Data Storage
-permalink: book/en/storage.html
+permalink: book/en/storage-focused.html
 ---
 
 To understand Nervos CKB, we need to bear in mind that CKB is designed for data storage, in other words, CKB is a storage-focused blockchain. What does storage-foucsed really mean and How to provide sustaninable security for the stored data? Let's figure it out.
@@ -18,11 +18,11 @@ That's what it means to say CKB is a storage-focused blockchain.
 
 ## A Storage-based Economics Model
 
-CKB's goal to be a storage-foucsed blockchain will be acheived by a storage-based economic model. 
+CKB's goal to be a storage-foucsed blockchain will be acheived by a storage-based economic model.
 
 What is a storage-based economics model? Even though CKB also charges on computation, but storage-based model means it charges for storage, by space and time comsumption. That's why Nervos has secondary issuance and NervosDAO to cellect storage rent, see the episode NervosDAO for more info on this. A storage-based ecomomics model means the users will pay for storage occupation.
 
-Bitcoin charges by transactions. Bitcoin bounds block size to confine how many transactions can be processed in 10mins, which is essentially means to throttle bandwidth, and consider bandwith is a scarce resource and price on it. And there are other smart contract platforms charging by computation. But Nervos CKB chooses a unique way for herself by charging by storage. Why is it? No one can deny that public chain is really expensive, maybe 10000 more expensive then cloud storage, whether doing computaion or storage on it. But actually consumption with computation and bandwidth are both renewable, but once storage space is occupied, all the nodes will have to bear the cost of storing forever. And with time passing by too much data get storaged, it get harder to afford such amount of storage, some full nodes will quit, and decenralization is harmed. To conclude, the real scarcity and bottleneck of public blockchain resousre is actually storage, so it's make a lot of sense to charge mainly by storage as Nervos CKB is doing. On the other hand, if storage is not properly charged, it will easily result in abuse. 
+Bitcoin charges by transactions. Bitcoin bounds block size to confine how many transactions can be processed in 10mins, which is essentially means to throttle bandwidth, and consider bandwith is a scarce resource and price on it. And there are other smart contract platforms charging by computation. But Nervos CKB chooses a unique way for herself by charging by storage. Why is it? No one can deny that public chain is really expensive, maybe 10000 more expensive then cloud storage, whether doing computaion or storage on it. But actually consumption with computation and bandwidth are both renewable, but once storage space is occupied, all the nodes will have to bear the cost of storing forever. And with time passing by too much data get storaged, it get harder to afford such amount of storage, some full nodes will quit, and decenralization is harmed. To conclude, the real scarcity and bottleneck of public blockchain resousre is actually storage, so it's make a lot of sense to charge mainly by storage as Nervos CKB is doing. On the other hand, if storage is not properly charged, it will easily result in abuse.
 
 That explains why Nervos choosed this storage-based economics model.
 
@@ -38,6 +38,6 @@ Not unlike Bitcoin, CK Byte can be used to incentivize miners to keep protecting
 
 Nervos CKB believes the introduction of storage-based economics model is crucial to a sustainable preservation platform. Once we understand why CKB is a storage-foucsed blockchain, and bear this mind, we are at a good position to explore other parts of the CKB idea.
 
-ref: 
+ref:
 
 - https://medium.com/nervosnetwork/nervos-rfc-0015-crypto-economics-design-for-a-preservation-focused-layer-1-blockchain-e265da91f1f8
