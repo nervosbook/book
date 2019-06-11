@@ -1,5 +1,7 @@
 - title: 简介
   items:
+    - id: public-chain
+      title: 什么叫做公链？
     - id: what-is
       title: 什么是 Nervos ?
     - id: punk

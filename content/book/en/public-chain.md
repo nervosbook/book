@@ -8,9 +8,9 @@ What is a public blockchain? How a consortium chain and a public chain differ an
 
 ## Public Blockchain and Consortium Blockchain
 
-2008, somebody or a group under the name Satoshi Nakamoto created Bitcoin. The ground-breaking new technology used by Bitcoin is now called Blockchain.
+In 2008 somebody or a group under the name Satoshi Nakamoto created Bitcoin, and Bitcoin network lanunched in 2009. The ground-breaking new technology used by Bitcoin is now called Blockchain.
 
-![]()
+![](https://img.haoqicat.com/2019060901.jpg)
 
 Blockchain did not come out of nothing. It is based on cryptography, before Bitcoin, a lot of tech breakthrough in this area actually laid down the foundation for Bitcoin. Public Key Encryption, Proof Of Work, Elliptic Curve Cryptography, SHA256 were invented long before Bitcoin was born and later became the components of Bitcoin and Blockchain. People inspired by Bitcoin then started many other blockchain projects, which can be roughly categorized into two types, one is public blockchain like Bitcoin, Ethereum and Nervos and many others, the other is consortium chain, Hyperledger by Linux Foundation is a outstanding example.
 
@@ -30,7 +30,7 @@ But consortium chains still has their own use case. Large organizations love the
 
 Public chain is about trust, a new way people interact with each other.
 
-Trust is what required for the world to run. In old time, many people never stepped out their village, so they only needed to trust some other individuals, say family members or friends. Today, people are collaboration in a state or global level, which means we often work with strangers, so we've switched from trusting individuals to trusting large organizations, say banks or big companies. But public blockchain inspired people to foresee a future where we don't need to trust people or organizations but to trust computers and math.
+Trust is what required for the world to run. In old time, many people never stepped out their village, so they only needed to trust some other individuals, say family members or friends. Today, people are collaboration in a state or global level, which means we often work with strangers, so we've switched from trusting individuals to trusting large organizations, say banks or big companies. But public blockchain inspired people foresee a future where we don't need to trust people or organizations but to trust computers and math.
 
 Public blockchain is there for everyone. It is built by everyone, owned by everyone, governed by everyone, and used by everyone. It is trust worthy because the data security is protected by the consensus of many people who don't know each other.
 
