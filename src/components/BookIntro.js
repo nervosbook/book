@@ -1,5 +1,5 @@
 import React from 'react'
-import { media } from 'theme'
+import { media, colors } from 'theme'
 
 const BookIntro = () => (
   <div
@@ -39,7 +39,6 @@ const BookIntro = () => (
         css={{
           width: '535px',
           marginTop: '75px',
-          fontFamily: 'Crete Round, Georgia, Times New Roman, Times, serif',
           [media.lessThan('medium')]: {
             width: '100%',
             marginTop: '0',
@@ -50,7 +49,7 @@ const BookIntro = () => (
         <div
           css={{
             fontSize: '30px',
-            color: '#e5533c',
+            color: colors.primary,
             marginTop: '35px',
             [media.lessThan('medium')]: {
               marginTop: 0
@@ -61,11 +60,10 @@ const BookIntro = () => (
         </div>
         <div
           css={{
-            color: '#14877e',
+            color: '#4BBC8E',
             fontSize: '18px',
             marginTop: '20px',
             position: 'relative',
-            fontFamily: 'myriad-pro, Arial, sans-serif',
             fontWeight: '400',
             lineHeight: '1.5',
             ':after': {
@@ -84,7 +82,6 @@ const BookIntro = () => (
           css={{
             color: '#333',
             fontSize: '18px',
-            fontFamily: 'myriad-pro, Arial, sans-serif',
             fontWeight: '400',
             lineHeight: '1.5',
             marginTop: '40px'
