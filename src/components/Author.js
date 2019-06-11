@@ -50,7 +50,6 @@ const Author = () => (
           <div
             css={{
               fontSize: 20,
-              fontWeight: 'bold',
               marginBottom: 10,
               color: '#4BBC8E'
             }}

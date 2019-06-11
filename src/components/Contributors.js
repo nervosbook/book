@@ -71,8 +71,7 @@ const s = {
     fontSize: '14px'
   },
   name: {
-    fontSize: '16px',
-    fontWeight: 'bold',
+    fontSize: 20,
     marginBottom: '10px',
     color: '#4BBC8E'
   },
