@@ -1,40 +1,14 @@
 import React from 'react'
-import { media, colors } from 'theme'
+import { media } from 'theme'
 
 const Author = () => (
   <div>
-    <div
-      css={{
-        marginTop: 50,
-        minHeight: 140,
-        background: colors.secondary,
-        textAlign: 'center',
-        letterSpacing: 1,
-        fontSize: 30,
-        fontWeight: 'bold',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        color: '#fff'
-      }}
-    >
-      <a
-        href="https://github.com/happypeter/gitbeijing"
-        css={{
-          color: colors.primary
-        }}
-      >
-        LAST UPDATE: May 2019
-      </a>
-    </div>
-    <div css={{ padding: 16 }}>
+    <div css={{ padding: 16, backgroundColor: '#f5f5f5' }}>
       <div
         css={{
           position: 'relative',
           marginBottom: '3em',
-          background: '#fff',
           padding: '2em',
-          borderRight: '30px solid #fff',
           minHeight: 147,
           width: 800,
           [media.lessThan('medium')]: {
@@ -75,12 +49,9 @@ const Author = () => (
         >
           <div
             css={{
-              fontSize: 16,
-              fontWeight: 'bold',
+              fontSize: 20,
               marginBottom: 10,
-              fontFamily: 'Crete Round',
-              fontStyle: 'italic',
-              color: '#e5533c'
+              color: '#4BBC8E'
             }}
           >
             happypeter

@@ -66,8 +66,7 @@ class Home extends Component {
                 textAlign: 'center',
                 margin: '3vw auto 35px',
                 fontSize: '1.5rem',
-                color: colors.white,
-                fontFamily: 'Helvetica, sans-serif'
+                color: colors.white
               }}
             >
               A little book about the Nervos' story

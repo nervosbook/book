@@ -19,28 +19,18 @@ const s = {
     [media.greaterThan('xlarge')]: {
       paddingBottom: 144
     },
-    backgroundColor: colors.primary,
-    backgroundImage: `linear-gradient(60deg, #4bda99, #3da274)`,
+    backgroundColor: '#f5f5f5',
     position: 'relative'
   },
-  date: {
-    backgroundColor: '#3da274',
-    padding: 4,
-    textAlign: 'center',
-    color: '#fff',
-    borderRadius: 4,
-    width: 80,
-    fontSize: 12
-  },
   title: {
-    color: '#fff',
+    color: colors.primary,
     fontWeight: 600,
     marginBottom: 16,
     fontSize: '1.5rem',
     lineHeight: '1.35417em'
   },
   desc: {
-    color: '#fff',
+    color: '#333',
     marginBottom: 16,
     fontSize: '0.875rem',
     lineHeight: '1.71429em'

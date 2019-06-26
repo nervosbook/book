@@ -2,28 +2,9 @@ import React from 'react'
 import { media, colors } from 'theme'
 
 const Contributors = () => (
-  <div css={{ marginBottom: '30px' }}>
-    <div
-      css={{
-        minHeight: '140px',
-        background: colors.secondary,
-        letterSpacing: '1px',
-        fontSize: '30px',
-        fontWeight: 'bold',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        color: '#fff'
-      }}
-    >
-      <a
-        href="https://github.com/happypeter/gitbeijing/graphs/contributors"
-        css={{
-          color: colors.primary
-        }}
-      >
-        GitHub 贡献者页面
-      </a>
+  <div css={{ margin: '60px 0' }}>
+    <div css={{ textAlign: 'center', fontSize: 30, color: colors.primary }}>
+      本书贡献者
     </div>
     <div
       css={{
@@ -39,11 +20,6 @@ const Contributors = () => (
       }}
     >
       <div css={s.card}>
-        <img
-          src="https://img.haoqicat.com/2019031822.jpg"
-          alt="happypeter"
-          css={s.img}
-        />
         <div css={s.text}>
           <div css={s.name}>happypeter</div>
           <div css={s.job}>
@@ -54,18 +30,6 @@ const Contributors = () => (
           本书作者。欢迎添加 Peter 微信：happypeter1983 。
         </div>
       </div>
-    </div>
-    <div css={{ margin: '50px auto 100px' }}>
-      <img
-        src="https://img.haoqicat.com/2019031899.png"
-        height="102"
-        width="250"
-        alt="people"
-        css={{
-          display: 'block',
-          margin: '0 auto'
-        }}
-      />
     </div>
   </div>
 )
@@ -107,12 +71,9 @@ const s = {
     fontSize: '14px'
   },
   name: {
-    fontSize: '16px',
-    fontWeight: 'bold',
+    fontSize: 20,
     marginBottom: '10px',
-    fontFamily: 'Crete Round',
-    fontStyle: 'italic',
-    color: '#e5533c'
+    color: '#4BBC8E'
   },
   job: {
     marginBottom: '15px'
