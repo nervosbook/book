@@ -10,6 +10,10 @@
   items:
     - id: ckb-overview
       title: 基本原理
+    - id: cell
+      title: Cell 原理
+    - id: sato
+      title: 中本聪共识
     - id: make-tx
       title: 交易
 - title: 经济学
