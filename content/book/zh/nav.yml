@@ -6,6 +6,10 @@
       title: 什么是 Nervos ?
     - id: punk
       title: 从密码朋克到区块链上的钱
+- title: 比特币基础
+  items:
+    - id: utxo
+      title: UTXO 是什么？
 - title: Nervos CKB 是如何工作的？
   items:
     - id: ckb-overview
