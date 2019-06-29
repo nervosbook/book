@@ -16,6 +16,8 @@
       title: 基本原理
     - id: cell
       title: Cell 原理
+    - id: vm
+      title: CKB VM
     - id: sato
       title: 中本聪共识
     - id: make-tx
