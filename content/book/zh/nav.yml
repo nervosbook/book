@@ -14,6 +14,8 @@
   items:
     - id: ckb-overview
       title: 基本原理
+    - id: arch
+      title: CKB 的基本结构
     - id: cell
       title: Cell 原理
     - id: vm
