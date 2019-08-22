@@ -39,3 +39,7 @@ So having the mining difficulty adjustable according to orphan block rate, is th
 ## Conclusion
 
 This is NC-max. NC-max utilizes NC's brilliance and made two improvements to fully utilize the bandwidth: NO.1 fixing the double-transmit-problem NO.2 having an  adaptive consensus. The final result is NC-max can reach 200 transactions per second, which is great to have as a global POW consensus chain.
+
+ref:
+
+- https://www.youtube.com/watch?v=F1nfrTsGJqk
