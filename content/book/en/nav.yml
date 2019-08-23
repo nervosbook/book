@@ -10,6 +10,8 @@
       title: Why Build A Layer1 Blockchain?
     - id: nc-max
       title: What Is NC-Max?
+    - id: p-model
+      title: Abstract Programming Model
 - title: How Nevos CKB Works
   items:
     - id: ckb-overview
