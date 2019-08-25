@@ -12,6 +12,8 @@
       title: What Is NC-Max?
     - id: p-model
       title: Abstract Programming Model
+    - id: concerns
+      title: Nervos Design Concerns
 - title: How Nevos CKB Works
   items:
     - id: ckb-overview
